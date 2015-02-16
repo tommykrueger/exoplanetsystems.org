@@ -1,0 +1,31 @@
+<div class="headline"><%= @name %></div>
+
+<div class="property">
+  <div class="label"><span>Type</span></div>
+  <div class="value"><span><%= @type %></span></div>
+</div>
+
+<div class="property">
+  <div class="label"><span>Distance (Parsec)</span></div>
+  <div class="value"><span><%= @distance %></span></div>
+</div>
+
+<div class="property">
+  <div class="label"><span>Distance (Light Years)</span></div>
+  <div class="value"><span><%= @distanceLY %></span></div>
+</div>
+
+<div class="property">
+  <div class="label"><span>Mass (Sun Masses)</span></div>
+  <div class="value"><span><%= @mass %></span></div>
+</div>
+
+<div class="property">
+  <div class="label"><span>Radius (Sun Radii)</span></div>
+  <div class="value"><span><%= @radius %></span></div>
+</div>
+
+<div class="property">
+  <div class="label"><span>Planets</span></div>
+  <div class="value"><span><%= @planets %></span></div>
+</div>

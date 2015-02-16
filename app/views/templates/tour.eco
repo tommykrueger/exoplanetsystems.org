@@ -1,0 +1,13 @@
+
+
+<div class="distance distance-1">
+  <p>Description Text for less than 1 Light year</p>
+</div>
+
+<div class="distance distance-10">
+  <p>Description Text for less than 10 Light year</p>
+</div>
+
+<div class="distance distance-1000">
+  <p>Our Milky Way. There are Billions of stars out there. The Milkyway plane is approximately 63° shifted from the sun plane.</p>
+</div>

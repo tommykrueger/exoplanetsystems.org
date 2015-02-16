@@ -1,0 +1,215 @@
+// nib is a powerful lib for stylus that provides cross-browser css3 mixins.
+// No more vendor prefixes. http://visionmedia.github.com/nib/
+@import 'nib'
+
+// variables go here
+_interfaceColor = #444 
+
+@import '_app'
+@import '_dialog'
+@import '_interface'
+@import '_menu'
+@import '_tooltip'
+@import '_popup'
+@import '_infobox'
+@import '_loader'
+@import '_tour'
+
+// Apply a natural box layout model to all elements.
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+  box-sizing border-box
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+
+:-webkit-full-screen body
+  width 100%
+  height 100%
+
+::-webkit-input-placeholder
+  color #999
+:-moz-placeholder
+  color #999
+  opacity 1
+::-moz-placeholder
+  color #999
+  opacity 1
+:-ms-input-placeholder
+  color #999
+
+body 
+  width 100%
+  margin 0
+  padding 0
+  font-size 100% 
+  font-family Open Sans Condensed, Arial
+  overflow hidden
+
+a
+  color steelblue
+  text-decoration none
+  transition all 250ms ease-in-out
+a:hover
+  color lightblue
+
+ul, ol
+  margin 0
+  padding 0
+  list-style none
+
+
+h1
+  color rgba(128, 128, 128, 0.4)
+  font-size 5em
+h2
+  color rgba(128, 128, 128, 0.4)
+  font-size 3em
+
+.text-small
+  font-size 0.7em
+
+
+.space-label
+  padding 3px 6px
+  color #fff
+  font-size 0.75em
+  text-shadow #444 0px 1px 1px
+  cursor pointer
+  position absolute
+  /*background: darkgreen;*/
+  transition opacity 250ms ease-in-out
+  transition background 250ms ease-in-out
+  opacity 0.75
+  border-radius 4px
+
+.space-label:hover
+  opacity 1.0
+  background #090909
+
+.space-label.labelgroup-1 
+  color #4682b4
+.space-label.labelgroup-2 
+  color #f0e68c
+.space-label.labelgroup-3 
+  color #d2691e
+.space-label.labelgroup-4 
+  color #ffa500
+
+.space-label:hover 
+  background darkgreen
+
+.space-label.moon
+  font-size 0.5em
+.star-label 
+  padding 2px 4px
+  position absolute
+  background rgba(0,0,0,0.25)
+
+
+
+#star-labels 
+  position absolute
+  top 0
+  left 0
+  .star-label
+    position absolute
+    color #fff
+    font-size 0.55em
+    cursor pointer
+    background rgba(0,0,0,0.25)
+    white-space nowrap
+    opacity 0.15
+    text-shadow 1px 1px 1px #000
+    transition all 250ms ease-in-out
+    letter-spacing 1px
+  .star-label:hover
+    opacity 1.0
+
+#star-labels.hidden
+  display none
+
+
+
+.habitable-star-label
+  width 24px
+  height 24px
+  margin -12px 0 0 -12px
+  display block
+  background-color transparent
+  border 2px solid rgba(25, 255, 50, 0.5)
+  border-radius 50%
+  .text
+    display none
+  :hover
+    background-color rgba(0, 255, 0, 0.05)
+
+
+
+.button, 
+.btn
+  /*border 1px solid rgba(255,255,255,0.1) */
+  border-radius 3px
+  font-size 1em
+  padding 10px 10px 10px 10px 
+  text-decoration none 
+  display inline-block
+  text-shadow 1px 1px 2px rgba(0,0,0,0.5)
+  font-weight bold 
+  color #3093c7
+  background-color #fff 
+  background linear-gradient(top, #3093c7, #1c5a85)
+  box-shadow 0 0 4px rgba(0,0,0,0.5)
+
+.button:hover, 
+.btn:hover
+  background-color #26759e
+  background linear-gradient(top, #26759e, #133d5b)
+
+.button.dark,
+.btn.dark
+  background linear-gradient(top, #3093c7, #1c5a85)
+
+.button.dark:hover
+.btn.dark:hover
+  background linear-gradient(top, #306397, #1c3a75)
+
+
+.button img, 
+.btn img
+  width 38px
+  height 38px
+  margin 0 auto
+  display block
+
+
+// Forms
+input[type=text],
+input[type=number] 
+  width 100%
+  min-width 320px
+  padding 6px 12px
+  display block
+  color #333
+  border-radius 3px
+  border 1px solid transparent
+  background-color #f0f0f0
+  transition all 200ms linear
+  outline none
+input[type=text]:focus,
+input[type=number]:focus
+  outline none
+
+
+input[type=submit] 
+  padding 8px 13px
+  color #fff
+  border-radius 4px
+  border 1px solid #1A87B9
+  background #25A6E1
+  background linear-gradient(top, #25A6E1, #188BC0)
+  
+  

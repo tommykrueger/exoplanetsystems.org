@@ -1,0 +1,65 @@
+<div id="settings">
+  <h3 class="headline">Settings</h3>
+
+  <div class="content-block">
+    <p>Visual Settings</p>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-labels" type="visibility" checked="checked"/>
+      <label for="checkbox-labels">Labels</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-named-stars" type="visibility" checked="checked"/>
+      <label for="checkbox-named-stars">Named Stars</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-star-lines" type="visibility" checked="checked"/>
+      <label for="checkbox-star-lines">Star Lines</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-dwarf-planets" type="visibility" checked="checked"/>
+      <label for="checkbox-dwarf-planets">Dwarf Planets</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-orbits" type="visibility" checked="checked"/>
+      <label for="checkbox-orbits">Orbits</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-orbit-inclination" type="visibility" checked="checked"/>
+      <label for="checkbox-orbit-inclination">Orbit Inclination</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-grid" type="visibility" checked="checked"/>
+      <label for="checkbox-grid">Grid</label>
+    </span>
+
+    <span class="field-block">
+      <input type="checkbox" id="checkbox-distance-rings" type="visibility" checked="checked"/>
+      <label for="checkbox-distance-rings">Distance Rings</label>
+    </span>
+
+  </div>
+
+
+  <div class="content-block">
+    <p>Data Settings</p>
+
+    <span class="field-block">
+      <span>Stars with number of Planets</span>
+      -- range --
+    </span>
+
+    <span class="field-block">
+      <span>Stars Distance</span>
+      -- range --
+    </span>
+
+  </div>
+
+</div>

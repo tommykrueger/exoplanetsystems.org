@@ -1,0 +1,93 @@
+1. Render Grid Plane for three dimensions 
+	Galaxy ( > 1000 LY )
+	Stars (> 1 LY )
+	PlanetSystem ( > 0 AU )
+
+2. Use circles for Grid Plane Distances
+3. Optimize Known Stars Labels performance
+4. + Stop mouseover event from stars if mouse is over html element
+
+
+Firmament
+1. Render Firmament view as shader (noise shader with custom variation)
+
+Galaxy Cluster (Locale Group)
+1. Find data of nearby galaxies and place them on the screen
+2. add galaxy shader to them (simplified image will do)
+
+
+Galaxy
+1. Add Galaxy Nebulas and make a nice Distribution of them
+2. Add Galaxy Core
+3. Add Galaxy Star Clusters
+4. Add Galaxy neighbors
+5. Add Galaxy Image into the Background
+
+
+Planet Systems
+1. Add Camera Flow for
+	a) Planet System isometric view (default)
+	b) Planet System HZ view (view from top)
+	c)
+
+Exoplanet Stars
+1. Render in Background with nice Glyph and Color Variation
+2. Add Clickfunction to stars and aniamte camera to the position (1 AU isometric)
+3.
+
+
+INTERFACE (2D)
+--------------
+
+Menu (top)
+1. Galaxy View
+2. Star View
+3. Planet Systems view
+4. Search
+5. Stats
+6. Help
+7. Settings
+8. Fullscreen
+
+
+Controls (right) - toggle elements on/off
+1. Compare with Solarsystem
+2. Show Grid System
+3. Show Stars
+4. Show Galaxy
+5. Show named stars
+6. Show Stars visible to the naked eye (later)
+7. Show star pictures (Sternenbilder)
+8. Show Distances (KM/AU/LY/PC)
+9. Show Distance Rings
+
+
+Credits
+<div>Icons made by Freepik, Daniel Bruce, Picol, SimpleIcon from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
+
+
+RESSOURCES and Links
+
+How to create a star field in photoshop
+- http://www.webdesign.org/photoshop/drawing-techniques/make-a-realistic-star-field.3811.html
+
+How to cretae a star nebula
+- https://www.youtube.com/watch?v=izsD9do7SHA
+
+HOW TO USE QUATERNION FOR CAMERA ROTATION
+http://stackoverflow.com/questions/11626808/three-js-auto-rotate-camera-to-focus-on-object
+
+INSPIRATION
+http://buf.com/films/cosmos-a-spacetime-odyssey/ (video)
+
+Galaxy Skybox
+http://opengameart.org/content/space-skybox-0
+
+http://de.wikipedia.org/wiki/Position_der_Erde_im_Universum
+
+Lines as Three geometry with inside on e Line Mesh
+http://alteredqualia.com/three/examples/lines_sphere_gl.html
+
+
+

@@ -1,0 +1,84 @@
+<div id="planet-view-header-left">
+  <img src="img/planets/<%= @image%>" id="planet-image" title="image based on artist impression"/>
+</div>
+<div id="planet-view-header-right">
+  <h3 class="headline"><%= @name %></h3>
+
+  <% if @confirmed: %>
+    <span class="property green">confirmed</span>
+  <% else: %>
+    <span class="property red">unconfirmed</span>
+  <% end %>
+
+  <% if parseInt(@habitable) == 1: %>
+    <span class="property green">habitable</span>
+  <% else: %>
+    <span class="property red">non-habitable</span>
+  <% end %>
+
+  <div id="actions">
+    <span class="action" action="bindTo">Goto</span>
+  </div>
+</div>
+
+<div id="planet-view-content">
+
+  <div class="content-block">
+
+    <span class="label-headline">Planetary properties</span>
+    <div class="label-group">
+      <span class="label">Distance from earth (LY):</span>
+      <span class="value"><%= @distance%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Radius (earth):</span>
+      <span class="value"><%= @radius%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Mass (earth):</span>
+      <span class="value"><%= @masse%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Mean Temperature (K):</span>
+      <span class="value"><%= @temp%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">ESI:</span>
+      <span class="value"><%= @esi%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Habitable:</span>
+      <span class="value"><%= @habitable%></span>
+    </div>
+
+    <span class="label-headline">Orbital properties</span>
+    <div class="label-group">
+      <span class="label">Semi Major Axis (AU):</span>
+      <span class="value"><%= @semiMajorAxis%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Sidereal Orbit Period (days):</span>
+      <span class="value"><%= @siderealOrbitPeriod%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Eccentricity:</span>
+      <span class="value"><%= @eccentricity%></span>
+    </div>
+    <div class="label-group">
+      <span class="label">Inclination:</span>
+      <span class="value"><%= @inclination%></span>
+    </div>
+
+    <span class="label-headline">Misc</span>
+    <div class="label-group">
+      <span class="label">Discovery Method:</span>
+      <span class="value"><%= @method%></span>
+    </div>
+     <div class="label-group">
+      <span class="label">Discovery Year:</span>
+      <span class="value"><%= @year%></span>
+    </div>
+
+  </div>
+
+</div>

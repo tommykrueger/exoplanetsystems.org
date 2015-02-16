@@ -1,0 +1,27 @@
+<h3>ExoPlanetSystems - How it works</h3>
+
+<p>The application shows orbital information of planets.</p>
+
+<p>
+  The default view shows the solar system with their planets and orbits. In the background are the stars that have confirmed exoplanets. You can use you mouse to get more information about certain stars by hovering or clicking it. The color of the stars indicates its spectral class. Red stars are mostly small dwarf stars. Where yellow colored stars are mostly sun-like ones. <br/>
+  Stars with habitable exoplanets have green markers in the scene. Those are currently expected to have planets in their habitable zone that might have liquid water on its surface.
+</p>
+
+<p>
+  You can use the blue icons in the top area to change the view of the scene or to search for any planetray system.
+  You can use to display icon to show/hide rendered data of the currently displayed system(s).
+</p>
+
+<p>
+  On the top right corner you can change the speed of the animation. You also can pause the animation if you want.
+</p>
+
+<p>
+  The bottom area shows the current distance from the camera (your screen) to the center of the scene (per default the center shows the Sun). If you zoom you will see how the numbers change. Use it to get a feeling for the large distances between planets and stars.
+</p>
+
+<p>
+  Currently there are planets and moons visible. I am currently working on embedding comets and asteroids as well.
+  (Please note that the positions are not time-related which means the real positions of the bodies are different. This visualization currently shows relative positions ans orbit information only).
+</p>
+

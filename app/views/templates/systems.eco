@@ -1,0 +1,39 @@
+<div id="systems">
+  <% for system in @systems: %>
+    <div class="system">
+      <span class="system-name"><%= system.name %></span>
+      <div class="system-info">
+        <div class="system-stars"></div>
+        <div class="system-satellites"></div>
+        <div class="system-settings" system="<%= system.name %>">
+
+          <span class="system-setting active" type="planets">
+            <i class="fa fa-circle"></i>
+            <span>Planets</span>
+          </span>
+
+          <span class="system-setting active" type="orbits">
+            <i class="fa fa-circle"></i>
+            <span>Orbits</span>
+          </span>
+
+          <span class="system-setting active" type="labels">
+            <i class="fa fa-circle"></i>
+            <span>Labels</span>
+          </span>
+
+          <span class="system-setting" type="habitable">
+            <i class="fa fa-circle"></i>
+            <span>Habitable Zone</span>
+          </span>
+
+          <span class="system-setting active" type="inclination">
+            <i class="fa fa-circle"></i>
+            <span>Inclination (<%= system.satellites[0].inclination %>&deg;)</span>
+          </span>
+
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

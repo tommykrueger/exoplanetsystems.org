@@ -1,0 +1,15 @@
+<div class="dialog-header">
+	<span class="close-dialog-btn">&times;</span>
+</div>
+
+<div class="dialog-content">
+	<h2><%= @headline%></h2>
+	<p><%= @description %></p>
+</div>
+
+<div class="dialog-form"></div>
+<div class="dialog-footer">
+	<% if @buttons.submit: %>
+		<span class="form-btn submit-btn" rel="start-game"><%= @buttons.submit %></span>
+	<% end %>
+</div>

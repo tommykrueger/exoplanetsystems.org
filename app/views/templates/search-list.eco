@@ -1,0 +1,5 @@
+<% for item in @data: %>
+  <li rel="system-<%= item.id %>">
+    <%= item.name %> <span class="text-dark"> | <%= item.planets %> planets | <%= item.distance %> parsec</span>
+  </li>
+<% end%>

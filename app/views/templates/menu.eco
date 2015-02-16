@@ -1,0 +1,45 @@
+<ul class="menu">
+
+  <% if @menu: %>
+    <% for m in @menu: %>
+      <li id="<%= m.id %>" class="button" title="<%= m.title %>">
+        <img src="img/icons/<%= m.id %>.svg" alt="Galaxy Icon"/>
+      </li>
+    <% end %>
+  <% else: %>
+
+    <!--
+    <li id="firmament-view" class="button" title="Firmament View ( 10 Bio Light Years) ">
+      <span class="fa fa-globe"></span>
+    </li>
+    <li id="local-group-view" class="button" title="Local Group ( 1 Mio Light Years) ">
+      <span class="fa fa-globe"></span>
+    </li>
+    -->
+
+    <li id="galaxy-view" class="button" title="Galaxy View (25000 Light Years) ">
+     <img src="img/icons/galaxy.svg" alt="Galaxy Icon"/>
+    </li>
+    <li id="star-view" class="button" title="Star View (100 Light Years)">
+      <img src="img/icons/stars.svg" alt="Stars Icon"/>
+    </li>
+    <li id="planet-view" class="button" title="Planet System View (1 AU)">
+      <img src="img/icons/planetsystem.svg" alt="Planetsystem Icon"/>
+    </li>  
+
+    <li id="systems" class="button" title="Show loaded systems"> 
+      <img src="img/icons/systems.svg" alt="Systems Icon"/>
+    </li>
+
+    <li id="search" class="button" title="Search by star or planet Name"> 
+      <img src="img/icons/search.svg" alt="Search Icon"/>
+    </li>
+    <li id="fullscreen" class="button" title="Toggle Fullscreen (only if your browser supports it)">
+      <img src="img/icons/screen.svg" alt="Fullscreen Icon"/>
+    </li>
+    <li id="settings" class="button" title="Open the Settings">
+      <img src="img/icons/settings.svg" alt="Settings Icon"/>
+    </li>
+  <% end %>
+  
+</ul>

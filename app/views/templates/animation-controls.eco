@@ -1,0 +1,22 @@
+<ul class="menu">
+  <!--
+  <li id="btn-help" class="button" title="Help">
+    <span class="fa fa-question"></span>
+  </li>
+  -->
+  
+  <li id="btn-controls" class="button dark" title="Animation Controls">
+    <img src="img/icons/speed.svg" alt="Speed Icon"/>
+  </li>
+</ul>
+
+<div id="animation-controls-container">
+  <div id="speed-controls">
+    <span class="play-pause-btn" id="play-pause-btn"><i class="fa fa-pause"></i></span>
+    <span class="speed-btn" id="speed-minus"> &minus; </span>
+    <span class="default-speed-btn" title="The Speed of the animation">1&times;</span>
+    <span class="speed-btn" id="speed-plus"> &plus; </span>
+  </div>
+
+  <div id="stars-distance-slider"></div>
+</div>

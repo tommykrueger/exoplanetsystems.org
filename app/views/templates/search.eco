@@ -1,0 +1,9 @@
+<div id="search">
+  <h3 class="headline">Search</h3>
+
+  <form action="server/search.php" method="post">
+    <input type="text" name="field-search" autocomplete="off" placeholder="Planet Name or Star" title="Search by stars like <Kepler-90> or <GJ 667> Search planet names like <Kepler-90 b> or <GJ 667 a>" />
+
+    <div class="dynamic"></div>
+  </form>
+</div>

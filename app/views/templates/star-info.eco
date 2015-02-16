@@ -1,0 +1,83 @@
+<h3 class="headline"><%= @name %></h3>
+<a href="http://exoplanetsystems.org/system/<%= @name %>" target="_blank">
+  http://exoplanetsystems.org/system/<%= @name %>
+</a>
+
+<ul id="tab-list">
+  <li class="active" rel="tab-info">Stellar Info</li>
+  <!-- <li rel="tab-images">Images</li> -->
+  <li rel="tab-planets">Planets</li>
+</ul>
+
+<div id="tabs">
+  <div class="tab active" id="tab-info">
+    <div class="content-block">
+
+      <div class="label-group">
+        <span class="label">Constellation:</span>
+        <span class="value"><%= @constellation.name%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Spectral Type:</span>
+        <span class="value"><%= @type%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Radius (sun radii):</span>
+        <span class="value"><%= @radius%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Mass (sun masses):</span>
+        <span class="value"><%= @mass%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Mean Temparature (surface):</span>
+        <span class="value"><%= @temp%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Distance from Earth (Parsec)</span>
+        <span class="value"><%= @distance%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Distance from Earth (Light Years)</span>
+        <span class="value"><%= @distanceLY%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Planets</span>
+        <span class="value"><%= @planets%></span>
+      </div>
+
+      <div class="label-group">
+        <span class="label">Habitable Planets</span>
+        <span class="value"><%= @habitable%></span>
+      </div>
+
+    </div>
+
+    <div id="actions">
+      <span class="action" action="show">Show Planet System</span>
+      <span class="action" action="moveTo">Goto Planet System</span>
+      <!-- <span class="action" action="calculateDistance">How long to travel there</span> -->
+    </div>
+  </div>
+
+  <!-- <div class="tab" id="tab-images"></div> -->
+
+  <div class="tab" id="tab-planets">
+    <ul id="system-planets">
+      <% for s in @satellites: %>
+        <li <% if (s.confirmed == 0): %> class="unconfirmed" <% end%>>
+          <img src="img/planets/<%= s.texture%>" id="planet-image" title="image based on artist impression"/>
+          <span><%= s.name%></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
